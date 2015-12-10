@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "ZHJBankNumberTextField.h"
+#import "ZHJNumberView.h"
 
 @interface ViewController ()<UITextFieldDelegate>
 {
@@ -28,7 +29,7 @@
     _bankTextField.textAlignment = NSTextAlignmentCenter;
     _bankTextField.text = @"65532738";
     [self.view addSubview:_bankTextField];
-    
+
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     [button setTitle:@"Console" forState:UIControlStateNormal];
     [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
@@ -38,6 +39,11 @@
     button.backgroundColor = [UIColor greenColor];
     [button addTarget:self action:@selector(get) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
+    
+    CGRect frame = CGRectMake(40, CGRectGetMaxY(button.frame) + 30, CGRectGetWidth(self.view.bounds) - 80, 35);
+    ZHJNumberView *digitField = [[ZHJNumberView alloc] initWithFrame:frame];
+    digitField.length = 8;
+    [self.view addSubview:digitField];
     // Do any additional setup after loading the view, typically from a nib.
 }
 

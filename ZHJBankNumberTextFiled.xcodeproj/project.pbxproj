@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50185A2D1C1978110016D283 /* ZHJBankNumberTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 50185A281C1978110016D283 /* ZHJBankNumberTextField.m */; };
+		50185A2E1C1978110016D283 /* ZHJNumberField.m in Sources */ = {isa = PBXBuildFile; fileRef = 50185A2A1C1978110016D283 /* ZHJNumberField.m */; };
+		50185A2F1C1978110016D283 /* ZHJNumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50185A2C1C1978110016D283 /* ZHJNumberView.m */; };
 		50B4275A1B687F260005D54B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B427591B687F260005D54B /* main.m */; };
 		50B4275D1B687F260005D54B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B4275C1B687F260005D54B /* AppDelegate.m */; };
 		50B427601B687F260005D54B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B4275F1B687F260005D54B /* ViewController.m */; };
@@ -14,7 +17,6 @@
 		50B427651B687F260005D54B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50B427641B687F260005D54B /* Images.xcassets */; };
 		50B427681B687F260005D54B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50B427661B687F260005D54B /* LaunchScreen.xib */; };
 		50B427741B687F260005D54B /* ZHJBankNumberTextFiledTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B427731B687F260005D54B /* ZHJBankNumberTextFiledTests.m */; };
-		50B4277F1B687F810005D54B /* ZHJBankNumberTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B4277E1B687F810005D54B /* ZHJBankNumberTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +30,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		50185A271C1978110016D283 /* ZHJBankNumberTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHJBankNumberTextField.h; sourceTree = "<group>"; };
+		50185A281C1978110016D283 /* ZHJBankNumberTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHJBankNumberTextField.m; sourceTree = "<group>"; };
+		50185A291C1978110016D283 /* ZHJNumberField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHJNumberField.h; sourceTree = "<group>"; };
+		50185A2A1C1978110016D283 /* ZHJNumberField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHJNumberField.m; sourceTree = "<group>"; };
+		50185A2B1C1978110016D283 /* ZHJNumberView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHJNumberView.h; sourceTree = "<group>"; };
+		50185A2C1C1978110016D283 /* ZHJNumberView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHJNumberView.m; sourceTree = "<group>"; };
 		50B427541B687F260005D54B /* ZHJBankNumberTextFiled.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZHJBankNumberTextFiled.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B427581B687F260005D54B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50B427591B687F260005D54B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -41,8 +49,6 @@
 		50B4276D1B687F260005D54B /* ZHJBankNumberTextFiledTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZHJBankNumberTextFiledTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B427721B687F260005D54B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50B427731B687F260005D54B /* ZHJBankNumberTextFiledTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHJBankNumberTextFiledTests.m; sourceTree = "<group>"; };
-		50B4277D1B687F810005D54B /* ZHJBankNumberTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHJBankNumberTextField.h; sourceTree = "<group>"; };
-		50B4277E1B687F810005D54B /* ZHJBankNumberTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHJBankNumberTextField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		50185A261C1978110016D283 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				50185A271C1978110016D283 /* ZHJBankNumberTextField.h */,
+				50185A281C1978110016D283 /* ZHJBankNumberTextField.m */,
+				50185A291C1978110016D283 /* ZHJNumberField.h */,
+				50185A2A1C1978110016D283 /* ZHJNumberField.m */,
+				50185A2B1C1978110016D283 /* ZHJNumberView.h */,
+				50185A2C1C1978110016D283 /* ZHJNumberView.m */,
+			);
+			name = src;
+			path = ../../../../baidu/OSC/ZHJBankNumberTextField/ZHJBankNumberTextFiled/src;
+			sourceTree = "<group>";
+		};
 		50B4274B1B687F260005D54B = {
 			isa = PBXGroup;
 			children = (
@@ -84,8 +104,7 @@
 		50B427561B687F260005D54B /* ZHJBankNumberTextFiled */ = {
 			isa = PBXGroup;
 			children = (
-				50B4277D1B687F810005D54B /* ZHJBankNumberTextField.h */,
-				50B4277E1B687F810005D54B /* ZHJBankNumberTextField.m */,
+				50185A261C1978110016D283 /* src */,
 				50B4275B1B687F260005D54B /* AppDelegate.h */,
 				50B4275C1B687F260005D54B /* AppDelegate.m */,
 				50B4275E1B687F260005D54B /* ViewController.h */,
@@ -225,9 +244,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				50B427601B687F260005D54B /* ViewController.m in Sources */,
-				50B4277F1B687F810005D54B /* ZHJBankNumberTextField.m in Sources */,
+				50185A2D1C1978110016D283 /* ZHJBankNumberTextField.m in Sources */,
+				50185A2F1C1978110016D283 /* ZHJNumberView.m in Sources */,
 				50B4275D1B687F260005D54B /* AppDelegate.m in Sources */,
 				50B4275A1B687F260005D54B /* main.m in Sources */,
+				50185A2E1C1978110016D283 /* ZHJNumberField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

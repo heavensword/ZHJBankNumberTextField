@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>CCECE3E3-9BC6-40F6-A3A0-97BF3DF0C91B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ZHJBankNumberTextFiled</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3C3E7124D3279D9179ACA1B975178C559CEA8CF3</key>
+		<string>https://github.com/heavensword/ZHJBankNumberTextField.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ZHJBankNumberTextFiled.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3C3E7124D3279D9179ACA1B975178C559CEA8CF3</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/heavensword/ZHJBankNumberTextField.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3C3E7124D3279D9179ACA1B975178C559CEA8CF3</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3C3E7124D3279D9179ACA1B975178C559CEA8CF3</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ZHJBankNumberTextField</string>
+		</dict>
+	</array>
+</dict>
+</plist>
