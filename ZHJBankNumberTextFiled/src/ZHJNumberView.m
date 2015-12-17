@@ -70,7 +70,7 @@
 }
 
 - (void)layoutvisibleTextFileds {
-    [self recyleNumberFields];    
+    [self recyleNumberFields];
     CGFloat width = CGRectGetWidth(self.bounds);
     CGFloat height = CGRectGetHeight(self.bounds);
     CGFloat marginX = 0;
@@ -113,12 +113,14 @@
 - (void)textFiledTextDidChange:(NSNotification *)notification {
     if ([notification.object isKindOfClass:[UITextField class]]) {
         UITextField *textField = notification.object;
-        NSInteger length = [textField.text length];
-        if (length > 0) {
+        if ([textField.text length]) {
             if (textField.tag + 1 < [_visibleTextFileds count]) {
                 UITextField *nextTextField = _visibleTextFileds[textField.tag + 1];
-                [nextTextField becomeFirstResponder];
-            }
+                NSInteger length = [nextTextField.text length];
+                if (length <= 0) {
+                    [nextTextField becomeFirstResponder];
+                }
+            }            
         }
     }
 }

@@ -36,7 +36,7 @@
 		50185A2A1C1978110016D283 /* ZHJNumberField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHJNumberField.m; sourceTree = "<group>"; };
 		50185A2B1C1978110016D283 /* ZHJNumberView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHJNumberView.h; sourceTree = "<group>"; };
 		50185A2C1C1978110016D283 /* ZHJNumberView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHJNumberView.m; sourceTree = "<group>"; };
-		50B427541B687F260005D54B /* ZHJBankNumberTextFiled.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZHJBankNumberTextFiled.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50B427541B687F260005D54B /* ZHJBankNumberTextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZHJBankNumberTextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B427581B687F260005D54B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50B427591B687F260005D54B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		50B4275B1B687F260005D54B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		50B427621B687F260005D54B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		50B427641B687F260005D54B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		50B427671B687F260005D54B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		50B4276D1B687F260005D54B /* ZHJBankNumberTextFiledTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZHJBankNumberTextFiledTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50B4276D1B687F260005D54B /* ZHJBankNumberTextField.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZHJBankNumberTextField.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B427721B687F260005D54B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50B427731B687F260005D54B /* ZHJBankNumberTextFiledTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHJBankNumberTextFiledTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,8 +95,8 @@
 		50B427551B687F260005D54B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				50B427541B687F260005D54B /* ZHJBankNumberTextFiled.app */,
-				50B4276D1B687F260005D54B /* ZHJBankNumberTextFiledTests.xctest */,
+				50B427541B687F260005D54B /* ZHJBankNumberTextField.app */,
+				50B4276D1B687F260005D54B /* ZHJBankNumberTextField.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -146,9 +146,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		50B427531B687F260005D54B /* ZHJBankNumberTextFiled */ = {
+		50B427531B687F260005D54B /* ZHJBankNumberTextField */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 50B427771B687F260005D54B /* Build configuration list for PBXNativeTarget "ZHJBankNumberTextFiled" */;
+			buildConfigurationList = 50B427771B687F260005D54B /* Build configuration list for PBXNativeTarget "ZHJBankNumberTextField" */;
 			buildPhases = (
 				50B427501B687F260005D54B /* Sources */,
 				50B427511B687F260005D54B /* Frameworks */,
@@ -158,14 +158,14 @@
 			);
 			dependencies = (
 			);
-			name = ZHJBankNumberTextFiled;
+			name = ZHJBankNumberTextField;
 			productName = ZHJBankNumberTextFiled;
-			productReference = 50B427541B687F260005D54B /* ZHJBankNumberTextFiled.app */;
+			productReference = 50B427541B687F260005D54B /* ZHJBankNumberTextField.app */;
 			productType = "com.apple.product-type.application";
 		};
-		50B4276C1B687F260005D54B /* ZHJBankNumberTextFiledTests */ = {
+		50B4276C1B687F260005D54B /* ZHJBankNumberTextFieldTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 50B4277A1B687F260005D54B /* Build configuration list for PBXNativeTarget "ZHJBankNumberTextFiledTests" */;
+			buildConfigurationList = 50B4277A1B687F260005D54B /* Build configuration list for PBXNativeTarget "ZHJBankNumberTextFieldTests" */;
 			buildPhases = (
 				50B427691B687F260005D54B /* Sources */,
 				50B4276A1B687F260005D54B /* Frameworks */,
@@ -176,9 +176,9 @@
 			dependencies = (
 				50B4276F1B687F260005D54B /* PBXTargetDependency */,
 			);
-			name = ZHJBankNumberTextFiledTests;
+			name = ZHJBankNumberTextFieldTests;
 			productName = ZHJBankNumberTextFiledTests;
-			productReference = 50B4276D1B687F260005D54B /* ZHJBankNumberTextFiledTests.xctest */;
+			productReference = 50B4276D1B687F260005D54B /* ZHJBankNumberTextField.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -199,7 +199,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 50B4274F1B687F260005D54B /* Build configuration list for PBXProject "ZHJBankNumberTextFiled" */;
+			buildConfigurationList = 50B4274F1B687F260005D54B /* Build configuration list for PBXProject "ZHJBankNumberTextField" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -212,8 +212,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				50B427531B687F260005D54B /* ZHJBankNumberTextFiled */,
-				50B4276C1B687F260005D54B /* ZHJBankNumberTextFiledTests */,
+				50B427531B687F260005D54B /* ZHJBankNumberTextField */,
+				50B4276C1B687F260005D54B /* ZHJBankNumberTextFieldTests */,
 			);
 		};
 /* End PBXProject section */
@@ -265,7 +265,7 @@
 /* Begin PBXTargetDependency section */
 		50B4276F1B687F260005D54B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 50B427531B687F260005D54B /* ZHJBankNumberTextFiled */;
+			target = 50B427531B687F260005D54B /* ZHJBankNumberTextField */;
 			targetProxy = 50B4276E1B687F260005D54B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -377,7 +377,7 @@
 				INFOPLIST_FILE = ZHJBankNumberTextFiled/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ZHJBankNumberTextField;
 			};
 			name = Debug;
 		};
@@ -388,7 +388,7 @@
 				INFOPLIST_FILE = ZHJBankNumberTextFiled/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ZHJBankNumberTextField;
 			};
 			name = Release;
 		};
@@ -406,8 +406,8 @@
 				);
 				INFOPLIST_FILE = ZHJBankNumberTextFiledTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZHJBankNumberTextFiled.app/ZHJBankNumberTextFiled";
+				PRODUCT_NAME = ZHJBankNumberTextField;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZHJBankNumberTextField.app/ZHJBankNumberTextField";
 			};
 			name = Debug;
 		};
@@ -421,15 +421,15 @@
 				);
 				INFOPLIST_FILE = ZHJBankNumberTextFiledTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZHJBankNumberTextFiled.app/ZHJBankNumberTextFiled";
+				PRODUCT_NAME = ZHJBankNumberTextField;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZHJBankNumberTextField.app/ZHJBankNumberTextField";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		50B4274F1B687F260005D54B /* Build configuration list for PBXProject "ZHJBankNumberTextFiled" */ = {
+		50B4274F1B687F260005D54B /* Build configuration list for PBXProject "ZHJBankNumberTextField" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				50B427751B687F260005D54B /* Debug */,
@@ -438,7 +438,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		50B427771B687F260005D54B /* Build configuration list for PBXNativeTarget "ZHJBankNumberTextFiled" */ = {
+		50B427771B687F260005D54B /* Build configuration list for PBXNativeTarget "ZHJBankNumberTextField" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				50B427781B687F260005D54B /* Debug */,
@@ -447,7 +447,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		50B4277A1B687F260005D54B /* Build configuration list for PBXNativeTarget "ZHJBankNumberTextFiledTests" */ = {
+		50B4277A1B687F260005D54B /* Build configuration list for PBXNativeTarget "ZHJBankNumberTextFieldTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				50B4277B1B687F260005D54B /* Debug */,
