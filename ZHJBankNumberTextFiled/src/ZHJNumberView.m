@@ -39,7 +39,7 @@
     _visibleTextFileds = [[NSMutableArray alloc] init];
     self.layer.masksToBounds = TRUE;
     self.layer.cornerRadius = 4;
-    self.layer.borderColor = [UIColor blueColor].CGColor;
+    self.layer.borderColor = [UIColor greenColor].CGColor;
     self.layer.borderWidth = 0.5;
     [self registerObservers];
 }
@@ -109,18 +109,40 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFiledTextDidChange:) name:UITextFieldTextDidChangeNotification object:nil];
 }
 
+- (BOOL)containsTextFiled:(UITextField *)textField {
+    if (textField) {
+        BOOL contains = FALSE;
+        for (UITextField *numberTextField in _visibleTextFileds) {
+            if (numberTextField == textField) {
+                contains = TRUE;
+                break;
+            }
+        }
+        return contains;
+    }
+    else {
+        return FALSE;
+    }
+}
+
 #pragma mark - notifications
 - (void)textFiledTextDidChange:(NSNotification *)notification {
     if ([notification.object isKindOfClass:[UITextField class]]) {
         UITextField *textField = notification.object;
-        if ([textField.text length]) {
-            if (textField.tag + 1 < [_visibleTextFileds count]) {
-                UITextField *nextTextField = _visibleTextFileds[textField.tag + 1];
-                NSInteger length = [nextTextField.text length];
-                if (length <= 0) {
-                    [nextTextField becomeFirstResponder];
+        /*
+         *由于UITextField的UITextFieldTextDidChangeNotification是全局通知
+         *需要判断是否是自身的UITextField发出的
+         */
+        if ([self containsTextFiled:textField]) {
+            if ([textField.text length]) {
+                if (textField.tag + 1 < [_visibleTextFileds count]) {
+                    UITextField *nextTextField = _visibleTextFileds[textField.tag + 1];
+                    NSInteger length = [nextTextField.text length];
+                    if (length <= 0) {
+                        [nextTextField becomeFirstResponder];
+                    }
                 }
-            }            
+            }
         }
     }
 }
