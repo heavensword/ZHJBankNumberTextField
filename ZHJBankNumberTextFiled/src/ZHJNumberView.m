@@ -102,7 +102,17 @@
 }
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
-    return [textField.text length] + [string length] <= 1;
+    BOOL shouldReplace = [textField.text length] + [string length] <= 1;
+    if (!shouldReplace) {
+        if (textField.tag + 1 < [_visibleTextFileds count]) {
+            UITextField *nextTextField = _visibleTextFileds[textField.tag + 1];
+            NSInteger length = [nextTextField.text length];
+            if (length <= 0) {
+                [nextTextField becomeFirstResponder];
+            }
+        }
+    }
+    return shouldReplace;
 }
 
 - (void)registerObservers {
