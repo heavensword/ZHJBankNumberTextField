@@ -23,7 +23,7 @@
 }
 
 - (void)deleteBackward {
-    BOOL shouldDimiss = (!self.text || [self.text length] <= 0);
+    BOOL shouldDimiss = TRUE;//(!self.text || [self.text length] <= 0);
     [super deleteBackward];
     if (shouldDimiss) {
         if (_numberDelegate && [_numberDelegate respondsToSelector:@selector(zhjNumberFieldDidBackspace:)]) {
